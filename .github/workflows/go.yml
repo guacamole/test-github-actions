@@ -22,7 +22,7 @@ jobs:
       run: go build -v ./...
 
     - name: RunApp
-      run: ./test-github-actions
+      run: ./test-github-actions &
       
     - name: Test-Endpoint
       run: curl localhost:5000
